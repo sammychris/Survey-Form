@@ -1,0 +1,155 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Survey Form</title>
+</head>
+<body>
+  <header>
+  <h1  id="title">Survey Form</h1>
+</header>
+<main id="main">
+  <p id="description">
+    Let us know how we can improve our Website
+  </p>
+  <form action="" id="survey-form">
+    <div class="row">
+      <div class="rowLeft">
+        <label id="name-label" for="name">Name:</label>
+      </div>
+      <div class="rowRight">
+        <input type="text" id="name" placeholder="Enter your name" required class="inputs">
+      </div>
+    </div>
+    <div class="row">
+      <div class="rowLeft">
+        <label id="email-label" for="email">Email:</label>
+      </div>
+      <div class="rowRight">
+        <input type="email" id="email" placeholder="Enter your email" required class="inputs">
+      </div>
+    </div>
+    <div class="row">
+      <div class="rowLeft">
+        <label id="number-label" for="number">Age:</label>
+      </div>
+      <div class="rowRight">
+        <input type="number" id="number" placeholder="Age" min="1" max="40" class="inputs">
+      </div>
+    </div>
+    <div class="row">
+      <div class="rowLeft">
+        <label for="dropdown">Which option best describes your current role?</label>
+      </div>
+      <div class="rowRight">
+        <select id="dropdown" class>
+          <option disabled>Select an option</option>
+          <option value="student">Student</option>
+          <option value="full time job">Full Time Job</option>
+          <option value="full time learner">Full Time Learner</option>
+          <option value="prefer not to say">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    <fieldset>
+      <legend>How likely is that you would recommend our Website to a friend?</legend>
+      <div class="row">
+        <div class="rowRight">
+          <div class="items">
+            <input id="one" type="radio" name="opt" value="one">
+            <label for="one">Definitely</label>
+          </div>
+          <div class="items">
+            <input id="two" type="radio" name="opt" value="two">
+            <label for="two">May be</label>
+          </div>
+          <div class="items">
+            <input id="three" type="radio" name="opt" value="three">
+            <label for="three">Not sure</label>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="row">
+      <div class="rowLeft">
+        <label for="choice">What do you like most in our Website?</label>
+      </div>
+      <div class="rowRight">
+        <select id="choice">
+          <option value="select an option">Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="open source">Open Source</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+    </div>
+    <fieldset>
+      <legend>
+        Things that should be improved in the future(Check all that apply):
+      </legend>
+        <div class="row">
+          <div class="rowRight">
+            <div class="items">
+              <input type="checkbox" id="frontend" value="frontend">
+              <label for="frontend">Front-end Projects</label>
+            </div>
+            <div class="items">
+              <input type="checkbox" id="backend" value="backend">
+              <label for="backend">Back-end Projects</label>
+            </div>
+            <div class="items">
+              <input type="checkbox" id="d3" value="d3">
+              <label for="d3">Data Visualization</label>
+            </div> 
+            <div class="items">
+              <input type="checkbox" id="challenge" value="challenge">
+              <label for="challenge">Challenges</label>
+            </div>  
+            <div class="items">
+              <input type="checkbox" id="source" value="source">
+              <label for="source">Open Source Community</label>
+            </div>  
+            <div class="items">
+              <input type="checkbox" id="gitter" value="gitter">
+              <label for="gitter">Gitter help rooms</label>
+            </div>  
+            <div class="items">
+              <input type="checkbox" id="videos" value="videos">
+              <label for="videos">Videos</label>
+            </div>  
+            <div class="items">
+              <input type="checkbox" id="city" value="city">
+              <label for="city">City Meetups</label>
+            </div> 
+            <div class="items">
+              <input type="checkbox" id="wiki" value="wiki">
+              <label for="wiki">Wiki</label>
+            </div>  
+            <div class="items">
+              <input type="checkbox" id="forum" value="forum">
+              <label for="forum">Forum</label>
+            </div>  
+            <div class="items">
+              <input type="checkbox" id="additional" value="additional">
+              <label for="additional">Additional Courses</label>
+            </div>
+          </div>
+       </div>
+    </fieldset>
+     <div class="row">
+      <div class="rowLeft">
+        <label for="comment">Any Comments or Suggestions?</label>
+       </div>
+      <div class="rowRight">
+        <textarea name="" id="" cols="10" rows="3" for="comment" placeholder="Enter your comment here..." class="inputs"></textarea>
+       </div>
+    </div>
+    <div id="div-submit">
+      <input type="submit" value="Submit" id="submit" >
+    </div>
+  </form>
+</main>
+</body>
+</html>
